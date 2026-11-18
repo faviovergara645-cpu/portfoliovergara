@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sobre mí | Favio Vergara</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top barra-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/FV-nav.png" alt="Logo de Favio Vergara" height="44" class="logo-nav me-2">
+                    <span class="fw-bold">Favio Vergara</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="sobre-mi.html" aria-current="page">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5">
+            <h2 class="text-center mb-5">SOBRE MÍ</h2>
+
+            <!-- Tu presentación con foto y biografía -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="img/favio.jpg" alt="Favio Vergara" class="foto-perfil mb-3">
+                    <h4 class="fw-bold mb-1">Favio Vergara</h4>
+                    <p class="texto-suave mb-0">Lima, Perú</p>
+                </div>
+                <div class="col-md-8">
+                    <p>Estoy en el 2.º ciclo de Diseño y Desarrollo de Software en Tecsup. Me gusta elaborar sitios web que funcionen correctamente: la interfaz que se vea atractiva y que la base de datos se vea ordenada y limpia.</p>
+                    <p class="mb-0">Aplico mis conocimientos en proyectos prácticos full-stack, abarcando diseño en Figma, frontend con Bootstrap y jQuery, backend con Java POO, Node.js y PHP, y administración de bases de datos en MySQL y Oracle SQL.</p>
+                </div>
+            </div>
+
+            <!-- Acordeón con los 3 bloques separados -->
+            <div class="accordion" id="accordionSobreMi">
+                <!-- Pregunta 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Qué tecnologías uso?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionSobreMi">
+                        <div class="accordion-body">
+                            Desarrollador de software con experiencia en el desarrollo integral de proyectos. Trabajo la interfaz con tecnologías frontend como HTML5, CSS3, JS, Bootstrap y jQuery, la lógica de negocio en el backend con PHP, Node.js y Java POO, la gestión de datos con MySQL y Oracle SQL, y el control de versiones seguro mediante Git y GitHub.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué tipo de proyectos hago?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSobreMi">
+                        <div class="accordion-body">
+                            Transformo diseños de Figma en sitios web institucionales adaptables a cualquier dispositivo. A nivel de backend, desarrollo sistemas transaccionales con inicio de sesión y gestión de datos utilizando Java, Node.js y MySQL.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo trabajo en equipo?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSobreMi">
+                        <div class="accordion-body">
+                            Gestiono el código fuente en GitHub a través de un flujo colaborativo basado en ramas, revisión de cambios y resolución de conflictos. Complemento este proceso creando documentación técnica detallada para la arquitectura de los proyectos empleando Markdown y diagramas Mermaid.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="franja-redes py-4 mt-5">
+            <div class="container d-flex justify-content-center gap-3">
+                <a href="https://github.com/faviovergara645-cpu" target="_blank" rel="noopener" class="icono-red" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="contacto.html" class="icono-red" aria-label="Contacto">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer class="pie py-3">
+            <div class="container">
+                <p class="text-center mb-0 small">Todos los Derechos Reservados © 2026 Favio Vergara.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/principal.js"></script>
+    </body>
+</html>

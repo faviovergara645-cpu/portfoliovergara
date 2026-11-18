@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contacto | Favio Vergara</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top barra-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/FV-nav.png" alt="Logo de Favio Vergara" height="44" class="logo-nav me-2">
+                    <span class="fw-bold">Favio Vergara</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1229.041720780606!2d-77.03146985208035!3d-12.045988781509678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d35a72fb%3A0x3ae7eb1845581c67!2sPlaza%20Mayor%20de%20Lima%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1791752705150!5m2!1ses!2spe" title="Mapa de Lima" width="100%" height="380" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+        <div class="contactos my-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <h2>CONTÁCTAME</h2>
+                        <p class="texto-suave">¿Tienes un proyecto web o una consulta? Llena el formulario y te respondo pronto.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="bi bi-geo-alt-fill texto-acento me-2"></i>Lima, Perú
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-github me-2"></i><a href="https://github.com/faviovergara645-cpu" target="_blank" rel="noopener">https://github.com/faviovergara645-cpu</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-mortarboard-fill texto-acento me-2"></i>Diseño y Desarrollo de Software, Tecsup
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="envio.php" method="POST">
+                                    <label for="nombres" class="form-label">Apellidos y nombres</label>
+                                    <input type="text" id="nombres" name="nombres" class="form-control mb-3" required>
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="email" id="correo" name="correo" class="form-control mb-3" required>
+                                    <label for="comentarios" class="form-label">Mensaje</label>
+                                    <textarea id="comentarios" name="comentarios" rows="4" class="form-control mb-3" required></textarea>
+                                    <button type="submit" class="btn-fv btn-fv--solido w-100"><i class="bi bi-send"></i><span>Enviar mensaje</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="franja-redes py-4 mt-5">
+            <div class="container d-flex justify-content-center gap-3">
+                <a href="https://github.com/faviovergara645-cpu" target="_blank" rel="noopener" class="icono-red" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="contacto.html" class="icono-red" aria-label="Contacto">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+
+        <footer class="pie py-3">
+            <div class="container">
+                <p class="text-center mb-0 small">Todos los Derechos Reservados © 2026 Favio Vergara.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="js/principal.js"></script>
+    </body>
+</html>
